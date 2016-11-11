@@ -1,0 +1,13 @@
+i	10
+l	15
+d	3.14
+f	2.718
+d	6.022
+s	Zyzzx
+l	53280
+i	64738
+c	D
+s	Hello World
+e	FatalException
+e	NonFatalException
+q

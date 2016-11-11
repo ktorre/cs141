@@ -1,0 +1,41 @@
+// Polymorphism : - Sub-classes "being" super-classes
+//                - The ability to designate an object as any class 
+//                  above itself in the hierarchy
+//                - 'instanceof' is used to determine the actual object type
+//
+import java.util.Scanner;
+import java.io.File;
+public class demo {
+    public static void main( String[] args ) throws Exception {
+	Scanner K = new Scanner( System.in );
+	String S = "Hello";
+	File F = new File( "junk.txt" );
+	Integer I = new Integer( 17 );
+	Float   Fl = new Float( 3.14 );
+	Scanner inputFile = new Scanner( F );
+
+	Object[] list = new Object[ 6 ];
+
+	list[ 0 ] = K;
+	list[ 1 ] = S;
+	list[ 2 ] = F;
+	list[ 3 ] = I;
+	list[ 4 ] = Fl;
+	list[ 5 ] = inputFile;
+
+	// for ( Object O : list ) {
+	//     if ( O instanceof Integer ) {
+	//     	System.out.println( I + " times 2 = " + ((Integer)O).intValue() * 2 );
+	//     } else if ( O instanceof Float ) {
+	//     	System.out.println( O + " times 2 = " + ( ((Float) O).floatValue() * 2 ) );
+	//     } else
+	// 	System.out.println( O );
+	// }
+
+	// I = (Integer)list[4];
+
+	int x = (int)( ((Float)list[4]).floatValue() );
+	System.out.println( I );
+	System.out.println( x );
+    }
+}
